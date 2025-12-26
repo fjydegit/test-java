@@ -1,0 +1,15 @@
+# 应用配置
+spring:
+  application:
+    name: test-java
+
+# 项目端口和url根路径
+server:
+  port: 2030
+  servlet:
+    context-path: /test
+
+# 项目配置: 日志目录
+project:
+  log-directory: ${localPath:..}/logs/test_java/${spring.application.name}/${spring.profiles.active}
+
